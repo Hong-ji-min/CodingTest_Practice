@@ -1,3 +1,4 @@
+/** 내 답안 **/
 import java.util.*;
 
 class Solution {
@@ -10,5 +11,14 @@ class Solution {
         
         double answer = (double)sum / numbers.length;
         return answer;
+    }
+}
+
+/** 모범답안 **/
+import java.util.Arrays;
+
+class Solution {
+    public double solution(int[] numbers) {
+        return Arrays.stream(numbers).average().orElse(0);
     }
 }
