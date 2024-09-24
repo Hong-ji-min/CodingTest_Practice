@@ -1,3 +1,4 @@
+/** 내 답안 **/
 class Solution {
     public int solution(int hp) {
         int answer = 0;
@@ -12,5 +13,12 @@ class Solution {
         answer += remainder;
         
         return answer;
+    }
+}
+
+/** 모범 답안 **/
+class Solution {
+    public int solution(int hp) {
+        return hp / 5 + (hp % 5 / 3) + hp % 5 % 3;
     }
 }
